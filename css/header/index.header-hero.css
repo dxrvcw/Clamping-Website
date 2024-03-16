@@ -1,0 +1,180 @@
+.header-hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 90px;
+	padding-top: 15px;
+	gap: 20px;
+	margin-top: 50px;
+}
+
+.header-hero__tree-illustration {
+	width: 50px;
+	height: 50px;
+}
+
+.header-hero__coord-text {
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+	letter-spacing: 2.4px;
+	font-weight: 700;
+	color: var(--text-light-color);
+}
+
+.header-hero__title {
+	font-size: 45px;
+	font-weight: 600;
+	color: var(--text-light-color);
+	text-align: center;
+}
+
+.header-hero__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.header-hero__btn {
+	padding: 18px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.header-hero__btn--book-now {
+	background-color: var(--green-color);
+	transition: all 0.3s cubic-bezier(0.23, 0.53, 0.43, 1.01);
+}
+
+.header-hero__btn-text {
+	font-size: 13.2px;
+	font-weight: 500;
+	color: var(--text-light-color);
+	letter-spacing: 1.32px;
+	font-family: "Inter", sans-serif;
+	text-align: center;
+	transition: all 0.3s cubic-bezier(0.23, 0.53, 0.43, 1.01);
+}
+
+.header-hero__btn--call-us {
+	border: 2px solid var(--text-light-color);
+}
+
+.header-hero__btn-icon {
+	width: 20px;
+	height: 20px;
+	transition: all 0.3s cubic-bezier(0.23, 0.53, 0.43, 1.01);
+}
+
+.header-hero__footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 45px;
+	margin-top: 30px;
+}
+
+.header-hero__btn--price-list {
+	padding: 0;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: underline;
+	letter-spacing: 2.4px;
+	font-family: "Inter", sans-serif;
+}
+
+.header-hero__arrow-down,
+.header-hero__quote-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.header-hero__quote {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.header-hero__quote-text {
+	font-size: 17px;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	color: var(--text-light-color);
+	text-align: center;
+}
+
+@media (width >= 768px) {
+	.header-hero__title {
+		font-size: 90px;
+		max-width: 500px;
+		text-align: right;
+	}
+
+	.header-hero {
+		align-items: flex-end;
+	}
+
+	.header-hero__footer {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		width: 100%;
+		margin-top: 120px;
+	}
+
+	.header-hero__quote {
+		max-width: 250px;
+		align-items: flex-end;
+	}
+
+	.header-hero__quote-text {
+		text-align: right;
+	}
+}
+
+@media (width >= 1024px) {
+	.header-hero__title {
+		font-size: 118px;
+	}
+}
+
+.header-hero__btn--book-now:hover {
+	background-color: var(--brand-color);
+}
+
+.header-hero__btn--call-us {
+	position: relative;
+}
+
+.header-hero__btn--call-us::before {
+	position: absolute;
+	content: "";
+	left: 50%;
+	width: 0;
+	height: 100%;
+	background-color: var(--text-light-color);
+	z-index: 1;
+	top: 0;
+	transition: all 0.3s cubic-bezier(0.23, 0.53, 0.43, 1.01);
+}
+
+.header-hero__btn--call-us:hover::before {
+	width: 100%;
+	left: 0;
+}
+
+.header-hero__btn--call-us:hover .header-hero__btn-text {
+	position: relative;
+	z-index: 10;
+	color: var(--text-title-color);
+}
+
+.header-hero__btn--call-us:hover .header-hero__btn-icon {
+	position: relative;
+	z-index: 10;
+	stroke: var(--text-title-color);
+}

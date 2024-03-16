@@ -1,5 +1,5 @@
 .header.wrapper {
-	height: 100vh;
+	min-height: fit-content;
 	background-image: url("../../img/header/header-background.png");
 	background-size: cover;
 	background-position-x: 25%;
