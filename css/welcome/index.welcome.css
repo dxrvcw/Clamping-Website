@@ -1,0 +1,140 @@
+.welcome-container {
+	padding-top: 55px;
+	padding-bottom: 90px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.welcome-container__article {
+	background-image: url("../../img/index.welcome/background.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.welcome-container__tree-illustration {
+	width: 50px;
+	height: 50px;
+}
+
+.welcome-container__title {
+	font-size: 34px;
+	font-weight: 500;
+	text-align: center;
+	color: var(--text-title-color);
+}
+
+.welcome-container__subtitle {
+	text-align: center;
+	color: var(--text-secondary-color);
+	line-height: 25.5px;
+	font-weight: 300;
+	font-size: 17px;
+	font-family: "Inter", sans-serif;
+}
+
+@media (width >= 768px) {
+	.welcome-container {
+		padding-top: 105px;
+		padding-bottom: 105px;
+	}
+
+	.welcome-container__title {
+		font-size: 40px;
+	}
+
+	.welcome-container__article {
+		width: 60%;
+	}
+}
+
+@media (width >= 992px) {
+	.welcome-container {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
+	.welcome-container__title {
+		font-size: 46px;
+	}
+}
+
+.welcome-container__statistic {
+	width: 100%;
+	margin-top: 45px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 50px;
+}
+
+.welcome-container__statistic-item-icon {
+	width: 50px;
+	height: 50px;
+	margin: auto;
+}
+
+.welcome-container__statistic-item-text {
+	width: 100%;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 2.4px;
+	color: var(--text-secondary-color);
+	margin-top: 20px;
+}
+
+@media (width >= 768px) {
+	.welcome-container__statistic {
+		margin-top: 50px;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+}
+
+@media (width >= 992px) {
+	.welcome-container__statistic {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 30px;
+	}
+}
+
+.welcome-container__advantages {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.welcome-container__advantages-item-title {
+	font-size: 22px;
+	color: var(--text-title-color);
+	font-weight: 600;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.welcome-container__advantages-item-desc {
+	text-align: center;
+	font-size: 17px;
+	color: var(--text-secondary-color);
+	font-family: "Inter", sans-serif;
+	font-weight: 250;
+	margin-top: 20px;
+}
+
+@media (width >= 768px) {
+	.welcome-container__advantages {
+		flex-direction: row;
+		gap: 30px;
+	}
+
+	.welcome-container__advantages-item-title {
+		font-size: 24px;
+	}
+}
